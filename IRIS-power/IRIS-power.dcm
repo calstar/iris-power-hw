@@ -1,0 +1,33 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +29.5V
+D Power symbol creates a global label with name "+29.5V"
+K power-flag
+$ENDCMP
+#
+$CMP +5V_MUX
+D Power symbol creates a global label with name "+5V_MUX"
+K power-flag
+$ENDCMP
+#
+$CMP +MUX
+D Power symbol creates a global label with name "+29.5V"
+K power-flag
+$ENDCMP
+#
+$CMP PCIE1X
+K connector
+F ~
+$ENDCMP
+#
+$CMP TPS55340
+K Voltage regulator switching boost
+$ENDCMP
+#
+$CMP TPS565201
+D 4.5-V to 17-V Input, 5-A Synchronous Step-Down Voltage Regulator
+K Voltage regulator switching buck
+F http://www.ti.com/lit/ds/symlink/tps565201.pdf
+$ENDCMP
+#
+#End Doc Library
