@@ -1,4 +1,4 @@
 (fp_lib_table
-  (lib (name STARpower)(type KiCad)(uri ${KIPRJMOD}/STARpower.pretty)(options "")(descr ""))
   (lib (name STAR_logos)(type KiCad)(uri ${KIPRJMOD}/STAR_logos.pretty)(options "")(descr ""))
+  (lib (name star-common-lib)(type KiCad)(uri ${KIPRJMOD}/hardware-sch-blocks/star-common-lib.pretty)(options "")(descr ""))
 )
