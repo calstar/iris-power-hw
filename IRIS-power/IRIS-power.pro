@@ -1,4 +1,4 @@
-update=2/22/2020 3:44:33 PM
+update=8/9/2020 4:19:33 PM
 version=1
 last_client=kicad
 [general]
@@ -25,24 +25,24 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=STARpower.net
+LastNetListRead=IRIS-power.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.2
-MinViaDiameter=0.508
-MinViaDrill=0.254
+MinTrackWidth=0.25
+MinViaDiameter=0.5588
+MinViaDrill=0.25
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.25
 ViaDiameter1=0.5588
 ViaDrill1=0.254
-dPairWidth1=0.2
-dPairGap1=0.25
+dPairWidth1=0.254
+dPairGap1=0.254
 dPairViaGap1=0.25
 SilkLineWidth=0.12
 SilkTextSizeV=0.7999999999999999
@@ -237,23 +237,12 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2
+Clearance=0.25
 TrackWidth=0.25
 ViaDiameter=0.5588
 ViaDrill=0.254
 uViaDiameter=0.3
 uViaDrill=0.1
-dPairWidth=0.2
-dPairGap=0.25
-dPairViaGap=0.25
-[pcbnew/Netclasses/1]
-Name=Low Clearance
-Clearance=0.16
-TrackWidth=0.25
-ViaDiameter=0.5588
-ViaDrill=0.254
-uViaDiameter=0.3
-uViaDrill=0.1
-dPairWidth=0.2
-dPairGap=0.25
+dPairWidth=0.254
+dPairGap=0.254
 dPairViaGap=0.25
