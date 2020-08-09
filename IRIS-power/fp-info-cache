@@ -1,4 +1,4 @@
-18653988042843915
+18665167190982948
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82068,6 +82068,13 @@ star-common-lib
 10
 10
 star-common-lib
+744316150
+
+
+0
+2
+2
+star-common-lib
 BMP388
 
 
@@ -82081,6 +82088,13 @@ CAS_physical
 0
 80
 80
+star-common-lib
+CST0612-FC-R002E
+2m current sense resistor
+shunt
+0
+4
+4
 star-common-lib
 CUI_PJ-047AH
 
@@ -82103,12 +82117,19 @@ JTAG ARM SMD connector
 10
 10
 star-common-lib
-HTSSOP-14
+IRIS_Physical
+
+IRIS
+0
+72
+37
+star-common-lib
+LTC3110
 
 
 0
-15
-14
+25
+25
 star-common-lib
 PROTO_2x6
 Through hole straight pin header, 2x06, 2.54mm pitch, double rows
@@ -82138,12 +82159,40 @@ SCCR20B335PRB
 2
 2
 star-common-lib
+TPS2121
+
+
+0
+12
+12
+star-common-lib
+TPS55340
+
+
+0
+15
+14
+star-common-lib
+TPSM53604
+
+
+0
+15
+15
+star-common-lib
 TSM-103-01-L-SV
 
 
 0
 3
 3
+star-common-lib
+VLS6045AF
+
+
+0
+2
+2
 star-common-lib
 airbears
 Imported from Airbears-launch.svg
