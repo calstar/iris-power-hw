@@ -1,4 +1,4 @@
-18665167190982948
+18666765061125773
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82130,6 +82130,13 @@ LTC3110
 0
 25
 25
+star-common-lib
+MAX17261
+
+
+0
+15
+15
 star-common-lib
 PROTO_2x6
 Through hole straight pin header, 2x06, 2.54mm pitch, double rows

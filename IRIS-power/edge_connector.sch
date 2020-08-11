@@ -46,8 +46,8 @@ L power:GND #PWR?
 U 1 1 5F352BB7
 P 6250 5100
 AR Path="/5F352BB7" Ref="#PWR?"  Part="1" 
-AR Path="/5F37FC72/5F352BB7" Ref="#PWR0103"  Part="1" 
-F 0 "#PWR0103" H 6250 4850 50  0001 C CNN
+AR Path="/5F37FC72/5F352BB7" Ref="#PWR0802"  Part="1" 
+F 0 "#PWR0802" H 6250 4850 50  0001 C CNN
 F 1 "GND" H 6255 4927 50  0000 C CNN
 F 2 "" H 6250 5100 50  0001 C CNN
 F 3 "" H 6250 5100 50  0001 C CNN
@@ -59,11 +59,11 @@ Wire Wire Line
 Wire Wire Line
 	6150 5100 6150 5000
 Connection ~ 6150 5100
-Text HLabel 6250 4900 2    50   Output ~ 0
+Text HLabel 6250 4800 2    50   Output ~ 0
 FB_HV_N
 Wire Wire Line
 	6250 4900 6150 4900
-Text HLabel 6250 4800 2    50   Input ~ 0
+Text HLabel 6250 4900 2    50   Input ~ 0
 +29.5V
 Wire Wire Line
 	6250 4800 6150 4800
