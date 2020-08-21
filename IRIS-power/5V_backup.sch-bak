@@ -511,11 +511,11 @@ Text HLabel 7750 3400 1    50   Input ~ 0
 +3.3V
 Text Label 4450 2800 0    50   ~ 0
 VSYS
-Text Label 6600 3850 0    50   ~ 0
-~CHRG
-Text Label 6600 3950 0    50   ~ 0
-CAP_OK
 Text Label 6600 4050 0    50   ~ 0
+~CHRG
+Text Label 6600 3850 0    50   ~ 0
+CAP_OK
+Text Label 6600 3950 0    50   ~ 0
 ~CMP_OUT
 Wire Wire Line
 	5150 3750 5500 3750
@@ -539,11 +539,11 @@ Text Label 3350 3400 0    50   ~ 0
 ~CHRG
 NoConn ~ 7000 4150
 Wire Wire Line
-	7000 3850 6600 3850
-Wire Wire Line
-	6600 3950 7000 3950
-Wire Wire Line
 	7000 4050 6600 4050
+Wire Wire Line
+	6600 3850 7000 3850
+Wire Wire Line
+	7000 3950 6600 3950
 $Comp
 L Interface_Expansion:PCA9537 U62
 U 1 1 5F328D7B

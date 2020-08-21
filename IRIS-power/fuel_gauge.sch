@@ -195,7 +195,7 @@ SCL
 Text HLabel 7000 3700 2    50   BiDi ~ 0
 SDA
 Text HLabel 5800 3100 1    50   Input ~ 0
-VSYS
++3.3V
 Wire Wire Line
 	5000 4200 5800 4200
 Wire Wire Line

@@ -1,4 +1,4 @@
-18666765666940367
+18669962609080707
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82124,6 +82124,13 @@ IRIS
 72
 37
 star-common-lib
+IRIS_Power_Physical
+
+IRIS
+0
+46
+11
+star-common-lib
 LTC3110
 
 
@@ -82200,6 +82207,13 @@ VLS6045AF
 0
 2
 2
+star-common-lib
+WSON-6-1EP_2x2mm_Hand_Solder
+WSON, 6 Pin (http://www.ti.com/lit/ds/symlink/tps61040.pdf#page=35), generated with kicad-footprint-generator ipc_noLead_generator.py
+WSON NoLead
+0
+9
+7
 star-common-lib
 airbears
 Imported from Airbears-launch.svg

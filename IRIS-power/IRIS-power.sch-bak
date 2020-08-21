@@ -26,7 +26,7 @@ F2 "+BATT" I L 7850 2300 50
 F3 "-BATT" I L 7850 2500 50 
 F4 "SCL" I R 8800 2300 50 
 F5 "SDA" B R 8800 2400 50 
-F6 "VSYS" I L 7850 2700 50 
+F6 "+3.3V" I L 7850 2700 50 
 $EndSheet
 $Sheet
 S 3100 3350 950  950 
@@ -103,12 +103,12 @@ Wire Wire Line
 Wire Wire Line
 	8800 3550 9000 3550
 $Comp
-L Connector_Generic:Conn_01x02 J101
+L Connector_Generic:Conn_01x02 J11
 U 1 1 5F2F210B
 P 950 2650
-AR Path="/5F2F210B" Ref="J101"  Part="1" 
+AR Path="/5F2F210B" Ref="J11"  Part="1" 
 AR Path="/5F38FD4F/5F2F210B" Ref="J?"  Part="1" 
-F 0 "J101" H 868 2325 50  0000 C CNN
+F 0 "J11" H 868 2325 50  0000 C CNN
 F 1 "Powerpole" H 868 2416 50  0000 C CNN
 F 2 "star-common-lib:Powerpole_1336G1" H 950 2650 50  0001 C CNN
 F 3 "~" H 950 2650 50  0001 C CNN
@@ -152,12 +152,12 @@ F 3 "" H 1900 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Barrel_Jack_Switch_MountingPin J102
+L Connector:Barrel_Jack_Switch_MountingPin J12
 U 1 1 5F2F2122
 P 1000 4050
-AR Path="/5F2F2122" Ref="J102"  Part="1" 
+AR Path="/5F2F2122" Ref="J12"  Part="1" 
 AR Path="/5F38FD4F/5F2F2122" Ref="J?"  Part="1" 
-F 0 "J102" H 1057 4367 50  0000 C CNN
+F 0 "J12" H 1057 4367 50  0000 C CNN
 F 1 "PJ-047AH" H 1057 4276 50  0000 C CNN
 F 2 "star-common-lib:CUI_PJ-047AH" H 1050 4010 50  0001 C CNN
 F 3 "~" H 1050 4010 50  0001 C CNN
@@ -222,10 +222,10 @@ L star-common-lib:TVS1400DRV U?
 U 1 1 5F2F2145
 P 1900 2600
 AR Path="/5F38FD4F/5F2F2145" Ref="U?"  Part="1" 
-AR Path="/5F2F2145" Ref="U101"  Part="1" 
-F 0 "U101" H 2029 2646 50  0000 L CNN
+AR Path="/5F2F2145" Ref="U11"  Part="1" 
+F 0 "U11" H 2029 2646 50  0000 L CNN
 F 1 "TVS1400DRV" H 2029 2555 50  0000 L CNN
-F 2 "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm" H 2100 2250 50  0001 C CNN
+F 2 "star-common-lib:WSON-6-1EP_2x2mm_Hand_Solder" H 2100 2250 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tvs1400.pdf" H 1800 2600 50  0001 C CNN
 	1    1900 2600
 	1    0    0    -1  
@@ -236,10 +236,10 @@ L star-common-lib:TVS1400DRV U?
 U 1 1 5F2F214D
 P 1900 4050
 AR Path="/5F38FD4F/5F2F214D" Ref="U?"  Part="1" 
-AR Path="/5F2F214D" Ref="U102"  Part="1" 
-F 0 "U102" H 2029 4096 50  0000 L CNN
+AR Path="/5F2F214D" Ref="U12"  Part="1" 
+F 0 "U12" H 2029 4096 50  0000 L CNN
 F 1 "TVS1400DRV" H 2029 4005 50  0000 L CNN
-F 2 "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm" H 2100 3700 50  0001 C CNN
+F 2 "star-common-lib:WSON-6-1EP_2x2mm_Hand_Solder" H 2100 3700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tvs1400.pdf" H 1800 4050 50  0001 C CNN
 	1    1900 4050
 	1    0    0    -1  
@@ -269,8 +269,6 @@ Wire Wire Line
 Wire Wire Line
 	9400 2300 9400 4550
 Wire Wire Line
-	7500 2700 7850 2700
-Wire Wire Line
 	7150 3550 7500 3550
 Wire Wire Line
 	7150 3650 7600 3650
@@ -289,8 +287,6 @@ Wire Wire Line
 	7300 3950 7300 4650
 Wire Wire Line
 	7150 3950 7300 3950
-Wire Wire Line
-	7500 2700 7500 3550
 Connection ~ 7500 3550
 Wire Wire Line
 	7500 3550 7850 3550
@@ -361,12 +357,12 @@ $EndComp
 $Comp
 L Connector:TestPoint_Probe TP106
 U 1 1 5F31F80A
-P 7350 2650
-F 0 "TP106" H 7503 2751 50  0000 L CNN
-F 1 "Backup" H 7503 2660 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 7550 2650 50  0001 C CNN
-F 3 "~" H 7550 2650 50  0001 C CNN
-	1    7350 2650
+P 7500 3550
+F 0 "TP106" H 7653 3651 50  0000 L CNN
+F 1 "Backup" H 7653 3560 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 7700 3550 50  0001 C CNN
+F 3 "~" H 7700 3550 50  0001 C CNN
+	1    7500 3550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -408,11 +404,6 @@ Connection ~ 4400 2300
 Wire Wire Line
 	4400 2300 7850 2300
 Wire Wire Line
-	7500 2700 7350 2700
-Wire Wire Line
-	7350 2700 7350 2650
-Connection ~ 7500 2700
-Wire Wire Line
 	9000 3550 9700 3550
 Wire Wire Line
 	7200 4750 9700 4750
@@ -447,4 +438,9 @@ Wire Wire Line
 	7300 5050 9700 5050
 Wire Wire Line
 	1900 3750 1900 3700
+Wire Wire Line
+	7600 3650 7600 2700
+Connection ~ 7600 3650
+Wire Wire Line
+	7600 2700 7850 2700
 $EndSCHEMATC
