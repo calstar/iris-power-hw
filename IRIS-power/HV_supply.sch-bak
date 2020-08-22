@@ -21,9 +21,6 @@ Wire Wire Line
 Wire Wire Line
 	5950 3250 5650 3250
 NoConn ~ 6550 4000
-Connection ~ 6350 4550
-Wire Wire Line
-	6650 4550 6350 4550
 Wire Wire Line
 	6550 3600 6550 3700
 Connection ~ 6550 3600
@@ -279,18 +276,16 @@ $EndComp
 $Comp
 L Device:Net-Tie_2 NT?
 U 1 1 5F4417D4
-P 6200 4550
+P 6350 4650
 AR Path="/5F4417D4" Ref="NT?"  Part="1" 
 AR Path="/5F41AE09/5F4417D4" Ref="NT41"  Part="1" 
-F 0 "NT41" H 6200 4639 50  0000 C CNN
-F 1 "Net-Tie_2" H 6200 4640 50  0001 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 6200 4550 50  0001 C CNN
-F 3 "~" H 6200 4550 50  0001 C CNN
-	1    6200 4550
-	1    0    0    -1  
+F 0 "NT41" H 6350 4739 50  0000 C CNN
+F 1 "Net-Tie_2" H 6350 4740 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 6350 4650 50  0001 C CNN
+F 3 "~" H 6350 4650 50  0001 C CNN
+	1    6350 4650
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6100 4550 6050 4550
 Connection ~ 4600 4550
 Wire Wire Line
 	4600 4550 4100 4550
@@ -325,13 +320,9 @@ Connection ~ 6050 4550
 Wire Wire Line
 	6050 4550 5950 4550
 Wire Wire Line
-	6300 4550 6350 4550
-Wire Wire Line
 	6350 4550 6350 4500
 Wire Wire Line
 	6550 3900 6900 3900
-Wire Wire Line
-	6650 4350 6650 4550
 Wire Wire Line
 	7250 3350 7250 3250
 Wire Wire Line
@@ -421,8 +412,6 @@ Wire Wire Line
 	5400 4550 5400 4800
 Wire Wire Line
 	5400 4800 6350 4800
-Wire Wire Line
-	6350 4800 6350 4550
 Connection ~ 5400 4550
 Wire Wire Line
 	3850 4550 4100 4550
@@ -435,4 +424,14 @@ Text Label 6350 3250 0    50   ~ 0
 SW
 Text Label 7350 3250 0    50   ~ 0
 +29.5V
+Wire Wire Line
+	6050 4550 6350 4550
+Connection ~ 6350 4550
+Wire Wire Line
+	6350 4800 6350 4750
+Wire Wire Line
+	6350 4800 6650 4800
+Wire Wire Line
+	6650 4350 6650 4800
+Connection ~ 6350 4800
 $EndSCHEMATC
