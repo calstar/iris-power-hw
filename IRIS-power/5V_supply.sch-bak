@@ -37,18 +37,16 @@ NoConn ~ 6250 3950
 $Comp
 L Device:Net-Tie_2 NT?
 U 1 1 5F427B91
-P 5650 4400
+P 5900 4400
 AR Path="/5F427B91" Ref="NT?"  Part="1" 
 AR Path="/5F41B5C3/5F427B91" Ref="NT51"  Part="1" 
-F 0 "NT51" H 5650 4489 50  0000 C CNN
-F 1 "Net-Tie_2" H 5650 4490 50  0001 C CNN
-F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 5650 4400 50  0001 C CNN
-F 3 "~" H 5650 4400 50  0001 C CNN
-	1    5650 4400
+F 0 "NT51" H 5900 4489 50  0000 C CNN
+F 1 "Net-Tie_2" H 5900 4490 50  0001 C CNN
+F 2 "NetTie:NetTie-2_SMD_Pad0.5mm" H 5900 4400 50  0001 C CNN
+F 3 "~" H 5900 4400 50  0001 C CNN
+	1    5900 4400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5750 4400 5800 4400
 Wire Wire Line
 	5800 4400 5800 4350
 $Comp
@@ -66,8 +64,6 @@ F 3 "" H 5500 4400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5500 4350 5500 4400
-Wire Wire Line
-	5500 4400 5550 4400
 Connection ~ 5500 4400
 $Comp
 L Device:C C?
@@ -168,10 +164,7 @@ Connection ~ 7550 4050
 Wire Wire Line
 	7550 4050 7750 4050
 Wire Wire Line
-	5800 4400 6550 4400
-Wire Wire Line
 	6550 4400 6550 4350
-Connection ~ 5800 4400
 Connection ~ 6550 3750
 NoConn ~ 6250 4150
 Wire Wire Line
@@ -184,7 +177,7 @@ Text HLabel 8250 3750 2    50   Output ~ 0
 +5V
 Text Label 6350 4050 0    50   ~ 0
 FB
-Text Label 6100 4400 0    50   ~ 0
+Text Label 6150 4400 0    50   ~ 0
 AGND
 $Comp
 L Device:C C53
@@ -250,4 +243,9 @@ Wire Wire Line
 Connection ~ 8150 3750
 Wire Wire Line
 	8150 3750 8250 3750
+Wire Wire Line
+	6000 4400 6550 4400
+Wire Wire Line
+	5500 4400 5800 4400
+Connection ~ 5800 4400
 $EndSCHEMATC

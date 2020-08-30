@@ -102,19 +102,6 @@ Wire Wire Line
 	4350 3550 4650 3550
 Wire Wire Line
 	8800 3550 9000 3550
-$Comp
-L Connector_Generic:Conn_01x02 J11
-U 1 1 5F2F210B
-P 950 2650
-AR Path="/5F2F210B" Ref="J11"  Part="1" 
-AR Path="/5F38FD4F/5F2F210B" Ref="J?"  Part="1" 
-F 0 "J11" H 868 2325 50  0000 C CNN
-F 1 "Powerpole" H 868 2416 50  0000 C CNN
-F 2 "star-common-lib:Powerpole_1336G1" H 950 2650 50  0001 C CNN
-F 3 "~" H 950 2650 50  0001 C CNN
-	1    950  2650
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1150 2550 1300 2550
 Wire Wire Line
@@ -443,4 +430,30 @@ Wire Wire Line
 Connection ~ 7600 3650
 Wire Wire Line
 	7600 2700 7850 2700
+$Comp
+L Connector_Generic_MountingPin:Conn_01x02_MountingPin J11
+U 1 1 5F44C754
+P 950 2550
+F 0 "J11" H 872 2767 50  0000 C CNN
+F 1 "Powerpole" H 872 2676 50  0000 C CNN
+F 2 "star-common-lib:Powerpole_1336G1" H 950 2550 50  0001 C CNN
+F 3 "~" H 950 2550 50  0001 C CNN
+	1    950  2550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	950  2850 950  2900
+$Comp
+L power:GND #PWR0106
+U 1 1 5F44E82C
+P 950 2900
+AR Path="/5F44E82C" Ref="#PWR0106"  Part="1" 
+AR Path="/5F38FD4F/5F44E82C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0106" H 950 2650 50  0001 C CNN
+F 1 "GND" H 955 2727 50  0000 C CNN
+F 2 "" H 950 2900 50  0001 C CNN
+F 3 "" H 950 2900 50  0001 C CNN
+	1    950  2900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
