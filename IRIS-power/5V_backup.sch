@@ -55,7 +55,7 @@ AR Path="/5F455545" Ref="C?"  Part="1"
 AR Path="/5F41BCFC/5F455545" Ref="C61"  Part="1" 
 F 0 "C61" H 2818 4296 50  0000 L CNN
 F 1 "3.3F" H 2818 4205 50  0000 L CNN
-F 2 "star-common-lib:SCCR20B335PRB" H 2738 4100 50  0001 C CNN
+F 2 "star-common-lib:CAP_10x27_5mm_pitch" H 2738 4100 50  0001 C CNN
 F 3 "SCCR20B335PRB" H 2700 4250 50  0001 C CNN
 	1    2700 4250
 	1    0    0    -1  
@@ -68,7 +68,7 @@ AR Path="/5F45554B" Ref="C?"  Part="1"
 AR Path="/5F41BCFC/5F45554B" Ref="C62"  Part="1" 
 F 0 "C62" H 2818 5046 50  0000 L CNN
 F 1 "3.3F" H 2818 4955 50  0000 L CNN
-F 2 "star-common-lib:SCCR20B335PRB" H 2738 4850 50  0001 C CNN
+F 2 "star-common-lib:CAP_10x27_5mm_pitch" H 2738 4850 50  0001 C CNN
 F 3 "SCCR20B335PRB" H 2700 5000 50  0001 C CNN
 	1    2700 5000
 	1    0    0    -1  
@@ -630,4 +630,48 @@ Wire Wire Line
 	4250 5250 4550 5250
 Connection ~ 4250 5250
 Connection ~ 4050 5250
+Text Notes 3650 5850 0    50   ~ 0
+FORMULA
+Text Notes 4700 5850 0    50   ~ 0
+CURRENT VALUE
+Wire Notes Line
+	3150 5900 5400 5900
+Wire Notes Line
+	3150 6100 5400 6100
+Text Notes 4900 6050 0    50   ~ 0
+4.494V
+Wire Notes Line
+	3150 6300 5400 6300
+Text Notes 3200 6250 0    50   ~ 0
+Vsys = 0.6 * (1 + R67/R68)
+Text Notes 3200 6050 0    50   ~ 0
+Vcap = (1.095) * (1 + R64/R65)
+Text Notes 4900 6250 0    50   ~ 0
+5.0V
+Wire Notes Line
+	3150 6500 5400 6500
+Wire Notes Line
+	3150 6700 5400 6700
+Text Notes 3200 6450 0    50   ~ 0
+Charge Current Lim = 3kOhm/R66
+Text Notes 4950 6450 0    50   ~ 0
+1A
+Text Notes 3200 6650 0    50   ~ 0
+Vth(rising) = 0.65 * (1 + R64/R65)
+Text Notes 3200 6850 0    50   ~ 0
+Vth(falling) = 0.59 * (1 + R64/65)
+Text Notes 4900 6650 0    50   ~ 0
+2.66V
+Text Notes 4900 6850 0    50   ~ 0
+2.42V
+Wire Notes Line
+	4650 6900 4650 5700
+Wire Notes Line
+	3150 5700 3150 6900
+Wire Notes Line
+	3150 6900 5400 6900
+Wire Notes Line
+	5400 6900 5400 5700
+Wire Notes Line
+	3150 5700 5400 5700
 $EndSCHEMATC

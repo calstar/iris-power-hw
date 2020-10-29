@@ -436,7 +436,7 @@ U 1 1 5F44C754
 P 950 2550
 F 0 "J11" H 872 2767 50  0000 C CNN
 F 1 "Powerpole" H 872 2676 50  0000 C CNN
-F 2 "" H 950 2550 50  0001 C CNN
+F 2 "star-common-lib:Powerpole_1336G1" H 950 2550 50  0001 C CNN
 F 3 "~" H 950 2550 50  0001 C CNN
 	1    950  2550
 	-1   0    0    -1  

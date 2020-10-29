@@ -1,4 +1,4 @@
-18669970920010932
+18682820798210181
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82082,12 +82082,26 @@ BMP388
 10
 10
 star-common-lib
+CAP_10x27_5mm_pitch
+
+
+0
+2
+2
+star-common-lib
 CAS_physical
 
 
 0
 80
 80
+star-common-lib
+CR12XX-Keystone-500
+
+
+0
+2
+2
 star-common-lib
 CST0612-FC-R002E
 2m current sense resistor
@@ -82103,6 +82117,13 @@ CUI_PJ-047AH
 5
 4
 star-common-lib
+EVAL-ADXL372Z
+
+
+0
+10
+10
+star-common-lib
 FTMH-120-03-F-DV-P
 Samtec LSHM-DV HIGH SPEED HERMAPHRODITIC STRIP 40 PINS UNSHIELDED
 0.5mm samtec lshm razor
@@ -82117,19 +82138,26 @@ JTAG ARM SMD connector
 10
 10
 star-common-lib
-IRIS_Physical
+HSCDRRN001BDSA3
 
-IRIS
+
 0
-72
-37
+16
+8
 star-common-lib
-IRIS_Power_Physical
-
+IRIS_Muons_physical
+Board outline and stack connector footprint for IRIS/Muons V4
 IRIS
 0
-46
-11
+56
+21
+star-common-lib
+LED_RGB_EAST1616RGBB2
+
+
+0
+4
+4
 star-common-lib
 LTC3110
 
@@ -82173,6 +82201,20 @@ SCCR20B335PRB
 2
 2
 star-common-lib
+ST_Motion_Breakout
+
+
+0
+10
+10
+star-common-lib
+SiPM
+
+
+0
+6
+6
+star-common-lib
 TPS2121
 
 
@@ -82200,6 +82242,20 @@ TSM-103-01-L-SV
 0
 3
 3
+star-common-lib
+Teensy41
+
+
+0
+54
+54
+star-common-lib
+UBLOX_CAM_M8
+uBlox GPS module, CAM-M8
+GPS, CAM-M8
+0
+31
+31
 star-common-lib
 VLS6045AF
 

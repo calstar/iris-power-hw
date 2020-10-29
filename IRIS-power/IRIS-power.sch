@@ -199,58 +199,21 @@ F 3 "~" H 1300 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1300 3750 1900 3750
-Wire Wire Line
-	1900 2900 1300 2900
 Connection ~ 1300 2900
-Wire Wire Line
-	1300 2300 1900 2300
-$Comp
-L star-common-lib:TVS1400DRV U?
-U 1 1 5F2F2145
-P 1900 2600
-AR Path="/5F38FD4F/5F2F2145" Ref="U?"  Part="1" 
-AR Path="/5F2F2145" Ref="U11"  Part="1" 
-F 0 "U11" H 2029 2646 50  0000 L CNN
-F 1 "TVS1400DRV" H 2029 2555 50  0000 L CNN
-F 2 "star-common-lib:WSON-6-1EP_2x2mm_Hand_Solder" H 2100 2250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tvs1400.pdf" H 1800 2600 50  0001 C CNN
-	1    1900 2600
-	1    0    0    -1  
-$EndComp
-Connection ~ 1900 2300
-$Comp
-L star-common-lib:TVS1400DRV U?
-U 1 1 5F2F214D
-P 1900 4050
-AR Path="/5F38FD4F/5F2F214D" Ref="U?"  Part="1" 
-AR Path="/5F2F214D" Ref="U12"  Part="1" 
-F 0 "U12" H 2029 4096 50  0000 L CNN
-F 1 "TVS1400DRV" H 2029 4005 50  0000 L CNN
-F 2 "star-common-lib:WSON-6-1EP_2x2mm_Hand_Solder" H 2100 3700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tvs1400.pdf" H 1800 4050 50  0001 C CNN
-	1    1900 4050
-	1    0    0    -1  
-$EndComp
 Connection ~ 1900 3750
 Wire Wire Line
 	1300 4150 1300 4350
 Wire Wire Line
 	1300 4350 1900 4350
-Connection ~ 1900 4350
 Wire Wire Line
 	1900 3750 3100 3750
-Wire Wire Line
-	1900 2300 2800 2300
 Wire Wire Line
 	2800 2300 2800 3550
 Connection ~ 2800 2300
 Wire Wire Line
-	1900 2900 2600 2900
-Wire Wire Line
 	2600 2900 2600 2500
 Wire Wire Line
 	2600 2500 7850 2500
-Connection ~ 1900 2900
 Wire Wire Line
 	9500 4650 9500 2400
 Wire Wire Line
@@ -456,4 +419,8 @@ F 3 "" H 950 2900 50  0001 C CNN
 	1    950  2900
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1300 2900 2600 2900
+Wire Wire Line
+	1300 2300 2800 2300
 $EndSCHEMATC
