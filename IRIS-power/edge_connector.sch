@@ -15,7 +15,7 @@ Comment4 ""
 $EndDescr
 Text HLabel 5700 3600 2    50   BiDi ~ 0
 SDA
-Text HLabel 5700 3100 2    50   Input ~ 0
+Text HLabel 5700 3500 2    50   Input ~ 0
 ~INT
 $Comp
 L power:GND #PWR?
@@ -57,7 +57,7 @@ Wire Wire Line
 Wire Wire Line
 	5700 3600 5600 3600
 Wire Wire Line
-	5700 3100 5600 3100
+	5700 3500 5600 3500
 $Comp
 L Connector_Generic_MountingPin:Conn_01x20_MountingPin J13
 U 1 1 5F8510FD
@@ -103,7 +103,7 @@ Wire Wire Line
 NoConn ~ 5600 3800
 NoConn ~ 5600 3900
 NoConn ~ 5600 4000
-NoConn ~ 5600 3500
+NoConn ~ 5600 3100
 NoConn ~ 5600 3400
 NoConn ~ 5600 3300
 NoConn ~ 5600 3200
