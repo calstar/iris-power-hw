@@ -111,7 +111,7 @@ Wire Wire Line
 Wire Wire Line
 	1300 2650 1300 2900
 Text Notes 900  3300 0    50   ~ 0
-Supports 2S - 3S LiPo\nTransient voltage protected
+Supports 2S - 3S LiPo
 $Comp
 L power:GND #PWR0101
 U 1 1 5F2F2116
@@ -148,14 +148,13 @@ F 0 "J12" H 1057 4367 50  0000 C CNN
 F 1 "PJ-047AH" H 1057 4276 50  0000 C CNN
 F 2 "star-common-lib:CUI_PJ-047AH" H 1050 4010 50  0001 C CNN
 F 3 "~" H 1050 4010 50  0001 C CNN
+F 4 "CP-047AH-ND" H 1000 4050 50  0001 C CNN "Digikey PN"
 	1    1000 4050
 	1    0    0    -1  
 $EndComp
 NoConn ~ 1300 4050
 Wire Wire Line
 	1300 3950 1300 3750
-Text Notes 900  4850 0    50   ~ 0
-Supports 9V-12V DC power\n2.1mm ID 5.5mm OD barrel jack\nTransient voltage protected
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5F2F212D
@@ -401,6 +400,7 @@ F 0 "J11" H 872 2767 50  0000 C CNN
 F 1 "Powerpole" H 872 2676 50  0000 C CNN
 F 2 "star-common-lib:Powerpole_1336G1" H 950 2550 50  0001 C CNN
 F 3 "~" H 950 2550 50  0001 C CNN
+F 4 "2243-1336G1-ND" H 950 2550 50  0001 C CNN "Digikey PN"
 	1    950  2550
 	-1   0    0    -1  
 $EndComp
@@ -423,4 +423,6 @@ Wire Wire Line
 	1300 2900 2600 2900
 Wire Wire Line
 	1300 2300 2800 2300
+Text Notes 900  4850 0    50   ~ 0
+Supports 9V-12V DC power\n2.1mm ID 5.5mm OD barrel jack
 $EndSCHEMATC

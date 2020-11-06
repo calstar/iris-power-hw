@@ -24,14 +24,14 @@ Wire Wire Line
 $Comp
 L power:GND1 #PWR?
 U 1 1 5F3ED548
-P 5400 4600
+P 6000 4600
 AR Path="/5F3ED548" Ref="#PWR?"  Part="1" 
 AR Path="/5F3CDA08/5F3ED548" Ref="#PWR021"  Part="1" 
-F 0 "#PWR021" H 5400 4350 50  0001 C CNN
-F 1 "GND1" H 5405 4427 50  0000 C CNN
-F 2 "" H 5400 4600 50  0001 C CNN
-F 3 "" H 5400 4600 50  0001 C CNN
-	1    5400 4600
+F 0 "#PWR021" H 6000 4350 50  0001 C CNN
+F 1 "GND1" H 6005 4427 50  0000 C CNN
+F 2 "" H 6000 4600 50  0001 C CNN
+F 3 "" H 6000 4600 50  0001 C CNN
+	1    6000 4600
 	1    0    0    -1  
 $EndComp
 Connection ~ 6950 4200
@@ -51,14 +51,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5F3ED567
-P 6600 4850
+P 6600 4950
 AR Path="/5F3ED567" Ref="#PWR?"  Part="1" 
 AR Path="/5F3CDA08/5F3ED567" Ref="#PWR022"  Part="1" 
-F 0 "#PWR022" H 6600 4600 50  0001 C CNN
-F 1 "GND" H 6605 4677 50  0000 C CNN
-F 2 "" H 6600 4850 50  0001 C CNN
-F 3 "" H 6600 4850 50  0001 C CNN
-	1    6600 4850
+F 0 "#PWR022" H 6600 4700 50  0001 C CNN
+F 1 "GND" H 6605 4777 50  0000 C CNN
+F 2 "" H 6600 4950 50  0001 C CNN
+F 3 "" H 6600 4950 50  0001 C CNN
+	1    6600 4950
 	1    0    0    -1  
 $EndComp
 NoConn ~ 5800 4400
@@ -72,6 +72,7 @@ F 0 "R24" H 5470 4496 50  0000 L CNN
 F 1 "10k" H 5470 4405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5330 4450 50  0001 C CNN
 F 3 "~" H 5400 4450 50  0001 C CNN
+F 4 "RNCP0603FTD10K0CT-ND" H 5400 4450 50  0001 C CNN "Digikey PN"
 	1    5400 4450
 	1    0    0    -1  
 $EndComp
@@ -85,6 +86,7 @@ F 0 "C21" H 5515 3296 50  0000 L CNN
 F 1 "0.1uF" H 5515 3205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5438 3100 50  0001 C CNN
 F 3 "~" H 5400 3250 50  0001 C CNN
+F 4 "1276-CL10B104KB8NNNLCT-ND" H 5400 3250 50  0001 C CNN "Digikey PN"
 	1    5400 3250
 	1    0    0    -1  
 $EndComp
@@ -98,6 +100,7 @@ F 0 "C22" H 7065 4096 50  0000 L CNN
 F 1 "0.47uF" H 7065 4005 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6988 3900 50  0001 C CNN
 F 3 "~" H 6950 4050 50  0001 C CNN
+F 4 "587-3506-1-ND" H 6950 4050 50  0001 C CNN "Digikey PN"
 	1    6950 4050
 	1    0    0    -1  
 $EndComp
@@ -152,44 +155,40 @@ F 0 "Q21" H 5305 4046 50  0000 L CNN
 F 1 "2N7002" H 5305 3955 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5300 3925 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 5100 4000 50  0001 L CNN
+F 4 "1727-8643-1-ND" H 5100 4000 50  0001 C CNN "Digikey PN"
 	1    5100 4000
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	6400 4700 6400 4600
-Wire Wire Line
-	6200 4700 6200 4600
 $Comp
 L Device:R_Shunt R?
 U 1 1 5F3ED5AE
-P 6300 4850
+P 6300 4950
 AR Path="/5F3ED5AE" Ref="R?"  Part="1" 
 AR Path="/5F3CDA08/5F3ED5AE" Ref="R25"  Part="1" 
-F 0 "R25" V 6167 4850 50  0000 C CNN
-F 1 "2m" V 6076 4850 50  0000 C CNN
-F 2 "star-common-lib:CST0612-FC-R002E" V 6230 4850 50  0001 C CNN
-F 3 "https://www.bourns.com/docs/product-datasheets/cst0612.pdf" H 6300 4850 50  0001 C CNN
-F 4 "CST0612-FC-R002ECT-ND" H 6300 4850 50  0001 C CNN "Digikey PN"
-F 5 "CST0612-FC-R002E" H 6300 4850 50  0001 C CNN "MFG PN"
-F 6 "0.78" H 6300 4850 50  0001 C CNN "Unit Cost"
-	1    6300 4850
-	0    1    -1   0   
+F 0 "R25" V 6167 4950 50  0000 C CNN
+F 1 "2m" V 6076 4950 50  0000 C CNN
+F 2 "star-common-lib:CST0612-FC-R002E" V 6230 4950 50  0001 C CNN
+F 3 "https://www.bourns.com/docs/product-datasheets/cst0612.pdf" H 6300 4950 50  0001 C CNN
+F 4 "CST0612-FC-R002ECT-ND" H 6300 4950 50  0001 C CNN "Digikey PN"
+F 5 "CST0612-FC-R002E" H 6300 4950 50  0001 C CNN "MFG PN"
+F 6 "0.78" H 6300 4950 50  0001 C CNN "Unit Cost"
+	1    6300 4950
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	5400 4300 5400 4000
 Connection ~ 5000 4200
 Connection ~ 5400 4000
-Connection ~ 5400 4600
 Wire Wire Line
 	5300 4000 5400 4000
 Wire Wire Line
 	5000 4600 5400 4600
 Text HLabel 5000 3000 1    50   Input ~ 0
 +BATT
-Text HLabel 5900 4850 0    50   Input ~ 0
+Text HLabel 5800 4950 0    50   Input ~ 0
 -BATT
 Wire Wire Line
-	6600 4850 6500 4850
+	6600 4950 6500 4950
 Text HLabel 7000 3600 2    50   Input ~ 0
 SCL
 Text HLabel 7000 3700 2    50   BiDi ~ 0
@@ -210,18 +209,16 @@ Wire Wire Line
 	6700 3900 6950 3900
 Wire Wire Line
 	6700 4200 6950 4200
-Text Label 6200 4650 0    50   ~ 0
+Text Label 6200 4800 1    50   ~ 0
 CSPL
-Text Label 6400 4650 0    50   ~ 0
+Text Label 6400 4800 1    50   ~ 0
 CSN
 Wire Wire Line
 	5000 3000 5000 3100
 Text Label 5000 3050 0    50   ~ 0
 +BATT
-Connection ~ 6200 4600
 Wire Wire Line
 	6100 4600 6200 4600
-Connection ~ 6100 4600
 $Comp
 L star-common-lib:MAX17261 U?
 U 1 1 5F3ED5B4
@@ -232,14 +229,11 @@ F 0 "U21" H 6250 4665 50  0000 C CNN
 F 1 "MAX17261" H 6250 4574 50  0000 C CNN
 F 2 "star-common-lib:MAX17261" H 6250 4000 50  0001 C CNN
 F 3 "" H 6250 4000 50  0001 C CNN
+F 4 "175-MAX17261METD+TCT-ND" H 6250 4000 50  0001 C CNN "Digikey PN"
 	1    6250 4000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5400 4600 6100 4600
-Wire Wire Line
-	5900 4850 6100 4850
-Text Label 5900 4850 0    50   ~ 0
+Text Label 5800 4950 0    50   ~ 0
 -BATT
 Text Label 5400 3550 0    50   ~ 0
 -BATT
@@ -255,4 +249,31 @@ Text Label 6750 3700 0    50   ~ 0
 SDA
 Text Label 5400 3100 0    50   ~ 0
 FG_VSYS
+Wire Notes Line
+	4950 3400 4900 3400
+Wire Notes Line
+	4900 3400 4900 3100
+Wire Notes Line
+	4900 3100 4950 3100
+Text Notes 3550 3300 0    50   ~ 0
+(N-1)*500kOhm (N is # of cells)
+Text Label 5050 4750 0    50   ~ 0
+-BATT
+Wire Wire Line
+	5050 4750 5000 4750
+Wire Wire Line
+	5000 4750 5000 4600
+Connection ~ 5000 4600
+Wire Wire Line
+	6000 4600 6100 4600
+Connection ~ 6100 4600
+Wire Wire Line
+	6200 4600 6200 4800
+Connection ~ 6200 4600
+Wire Wire Line
+	6400 4600 6400 4800
+Wire Wire Line
+	5800 4950 6100 4950
+Text Notes 5550 5300 0    50   ~ 0
+Layout Guidelines (from datasheet pg 28)\n
 $EndSCHEMATC
