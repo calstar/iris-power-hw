@@ -76,6 +76,7 @@ F 0 "U71" H 5950 4242 50  0000 C CNN
 F 1 "TLV75733PDBV" H 5950 4151 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5950 4225 50  0001 C CIN
 F 3 "https://www.ti.com/lit/ds/symlink/tlv757p.pdf" H 5950 3950 50  0001 C CNN
+F 4 "296-50414-1-ND" H 5950 3900 50  0001 C CNN "Digikey PN"
 	1    5950 3900
 	1    0    0    -1  
 $EndComp

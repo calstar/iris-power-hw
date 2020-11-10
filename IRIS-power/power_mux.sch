@@ -42,6 +42,7 @@ F 0 "R34" H 5720 4296 50  0000 L CNN
 F 1 "2.49k" H 5720 4205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5580 4250 50  0001 C CNN
 F 3 "~" H 5650 4250 50  0001 C CNN
+F 4 "RNCP0603FTD2K49CT-ND" H 5650 4250 50  0001 C CNN "Digikey PN"
 	1    5650 4250
 	1    0    0    -1  
 $EndComp
@@ -156,6 +157,7 @@ F 0 "R35" H 7170 4496 50  0000 L CNN
 F 1 "38.3k" H 7170 4405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7030 4450 50  0001 C CNN
 F 3 "~" H 7100 4450 50  0001 C CNN
+F 4 "RMCF0603FT38K3CT-ND" H 7100 4450 50  0001 C CNN "Digikey PN"
 	1    7100 4450
 	1    0    0    -1  
 $EndComp
@@ -184,6 +186,7 @@ F 0 "R31" H 4820 3496 50  0000 L CNN
 F 1 "2.49k" H 4820 3405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4680 3450 50  0001 C CNN
 F 3 "~" H 4750 3450 50  0001 C CNN
+F 4 "RNCP0603FTD2K49CT-ND" H 4750 3450 50  0001 C CNN "Digikey PN"
 	1    4750 3450
 	1    0    0    -1  
 $EndComp
@@ -256,7 +259,7 @@ AR Path="/5F4141C2" Ref="D?"  Part="1"
 AR Path="/5F3CE42C/5F4141C2" Ref="D31"  Part="1" 
 F 0 "D31" V 6400 4650 50  0000 C CNN
 F 1 "D_Schottky" H 6400 4674 50  0001 C CNN
-F 2 "Diode_SMD:D_SMA_Handsoldering" H 6400 4800 50  0001 C CNN
+F 2 "Diode_SMD:D_SMA" H 6400 4800 50  0001 C CNN
 F 3 "https://www.comchiptech.com/admin/files/product/CDBA240LL-HF%20RevD765674.pdf" H 6400 4800 50  0001 C CNN
 F 4 "641-1698-1-ND" H 6400 4800 50  0001 C CNN "Digikey PN"
 F 5 "CDBA240LL-HF" H 6400 4800 50  0001 C CNN "MFG PN"
@@ -319,4 +322,44 @@ Wire Wire Line
 Wire Wire Line
 	7600 3600 7150 3600
 Connection ~ 7150 3600
+$Comp
+L Jumper:SolderJumper_2_Open JP31
+U 1 1 5FAA1238
+P 8250 4150
+F 0 "JP31" H 8250 4355 50  0000 C CNN
+F 1 "DC Jack Bypass" H 8250 4264 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8250 4150 50  0001 C CNN
+F 3 "~" H 8250 4150 50  0001 C CNN
+	1    8250 4150
+	1    0    0    -1  
+$EndComp
+Text HLabel 8400 4150 2    50   Output ~ 0
++MUX
+Text HLabel 8100 4150 0    50   Input ~ 0
+VDC
+$Comp
+L Jumper:SolderJumper_2_Open JP32
+U 1 1 5FAA1C70
+P 8250 4500
+F 0 "JP32" H 8250 4705 50  0000 C CNN
+F 1 "Battery Bypass" H 8250 4614 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8250 4500 50  0001 C CNN
+F 3 "~" H 8250 4500 50  0001 C CNN
+	1    8250 4500
+	1    0    0    -1  
+$EndComp
+Text HLabel 8400 4500 2    50   Output ~ 0
++MUX
+Text HLabel 8100 4500 0    50   Input ~ 0
++BATT
+Text Notes 7750 3850 0    50   ~ 0
+Power MUX Bypass
+Wire Notes Line
+	8750 3850 8750 4650
+Wire Notes Line
+	7750 4650 7750 3850
+Wire Notes Line
+	7750 3850 8750 3850
+Wire Notes Line
+	7750 4650 8750 4650
 $EndSCHEMATC

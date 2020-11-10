@@ -267,6 +267,7 @@ F 0 "TP102" H 4503 3601 50  0000 L CNN
 F 1 "Mux" H 4503 3510 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 4550 3500 50  0001 C CNN
 F 3 "~" H 4550 3500 50  0001 C CNN
+F 4 "36-5006-ND" H 4350 3500 50  0001 C CNN "Digikey PN"
 	1    4350 3500
 	1    0    0    -1  
 $EndComp
@@ -278,6 +279,7 @@ F 0 "TP103" H 4552 2351 50  0000 L CNN
 F 1 "+BATT" H 4552 2260 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 4600 2250 50  0001 C CNN
 F 3 "~" H 4600 2250 50  0001 C CNN
+F 4 "36-5006-ND" H 4400 2250 50  0001 C CNN "Digikey PN"
 	1    4400 2250
 	1    0    0    -1  
 $EndComp
@@ -289,6 +291,7 @@ F 0 "TP104" H 6053 3601 50  0000 L CNN
 F 1 "5V" H 6053 3510 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 6100 3500 50  0001 C CNN
 F 3 "~" H 6100 3500 50  0001 C CNN
+F 4 "36-5006-ND" H 5900 3500 50  0001 C CNN "Digikey PN"
 	1    5900 3500
 	1    0    0    -1  
 $EndComp
@@ -300,6 +303,7 @@ F 0 "TP105" H 7452 5101 50  0000 L CNN
 F 1 "29.5V" H 7452 5010 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 7500 5000 50  0001 C CNN
 F 3 "~" H 7500 5000 50  0001 C CNN
+F 4 "36-5006-ND" H 7300 5000 50  0001 C CNN "Digikey PN"
 	1    7300 5000
 	1    0    0    -1  
 $EndComp
@@ -311,6 +315,7 @@ F 0 "TP106" H 7653 3651 50  0000 L CNN
 F 1 "Backup" H 7653 3560 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 7700 3550 50  0001 C CNN
 F 3 "~" H 7700 3550 50  0001 C CNN
+F 4 "36-5006-ND" H 7500 3550 50  0001 C CNN "Digikey PN"
 	1    7500 3550
 	1    0    0    -1  
 $EndComp
@@ -322,6 +327,7 @@ F 0 "TP107" H 9152 3601 50  0000 L CNN
 F 1 "3.3V" H 9152 3510 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 9200 3500 50  0001 C CNN
 F 3 "~" H 9200 3500 50  0001 C CNN
+F 4 "36-5006-ND" H 9000 3500 50  0001 C CNN "Digikey PN"
 	1    9000 3500
 	1    0    0    -1  
 $EndComp
@@ -333,6 +339,7 @@ F 0 "TP101" H 2053 3801 50  0000 L CNN
 F 1 "Jack" H 2053 3710 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 2100 3700 50  0001 C CNN
 F 3 "~" H 2100 3700 50  0001 C CNN
+F 4 "36-5006-ND" H 1900 3700 50  0001 C CNN "Digikey PN"
 	1    1900 3700
 	1    0    0    -1  
 $EndComp

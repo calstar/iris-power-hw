@@ -1,4 +1,4 @@
-18682820798210181
+18697276668845687
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -82166,12 +82166,26 @@ LTC3110
 25
 25
 star-common-lib
+MAX17048G&plus_
+
+
+0
+9
+9
+star-common-lib
 MAX17261
 
 
 0
 15
 15
+star-common-lib
+Molex_Mini-Fit_Jr_5569-02A2_2x01_P4.20mm_Horizontal
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5569-02A2, example for new mpn: 39-30-0020, 1 Pins per row, Mounting: Snap-in Plastic Peg PCB Lock (http://www.molex.com/pdm_docs/sd/039300020_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr top entryplastic_peg
+0
+2
+2
 star-common-lib
 PROTO_2x6
 Through hole straight pin header, 2x06, 2.54mm pitch, double rows
@@ -82185,7 +82199,7 @@ PWR163
 
 0
 3
-2
+3
 star-common-lib
 Powerpole_1336G1
 
@@ -82250,6 +82264,20 @@ Teensy41
 54
 54
 star-common-lib
+TestPoint_Keystone_5000_Miniature
+Keystone Miniature THM Test Point 5000-5004, http://www.keyelco.com/product-pdf.cfm?p=1309
+Through Hole Mount Test Points
+0
+1
+1
+star-common-lib
+TestPoint_Keystone_5117_Miniature
+Keystone Miniature THM Test Point 5000-5004, http://www.keyelco.com/product-pdf.cfm?p=1309
+Through Hole Mount Test Points
+0
+1
+1
+star-common-lib
 UBLOX_CAM_M8
 uBlox GPS module, CAM-M8
 GPS, CAM-M8
@@ -82279,6 +82307,41 @@ svg2mod
 0
 star-common-lib
 star
+
+
+0
+0
+0
+star-common-lib
+star_6x5_2
+
+
+0
+0
+0
+star-common-lib
+star_7x6
+
+
+0
+0
+0
+star-common-lib
+star_8x7
+
+
+0
+0
+0
+star-common-lib
+star_9x8
+
+
+0
+0
+0
+star-common-lib
+star_12x10
 
 
 0
