@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 8
+Sheet 6 9
 Title ""
 Date ""
 Rev ""
@@ -494,7 +494,7 @@ Wire Wire Line
 	2950 3100 2700 3100
 Connection ~ 2700 3100
 Text HLabel 2550 2800 0    50   Input ~ 0
-+5V
++MUX
 Text HLabel 5750 2800 2    50   Output ~ 0
 VSYS
 $Comp

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date "2020-08-06"
 Rev ""
@@ -29,13 +29,13 @@ F5 "SDA" B R 8800 2400 50
 F6 "+3.3V" I L 7850 2700 50 
 $EndSheet
 $Sheet
-S 3100 3350 950  950 
+S 3400 4650 950  950 
 U 5F3CE42C
 F0 "Power Mux" 50
 F1 "power_mux.sch" 50
-F2 "VDC" I L 3100 3750 50 
-F3 "+MUX" O R 4050 3550 50 
-F4 "+BATT" I L 3100 3550 50 
+F2 "+MUX" O R 4350 4850 50 
+F3 "+5V" I L 3400 4850 50 
+F4 "VUSB" I L 3400 5050 50 
 $EndSheet
 $Sheet
 S 4650 4650 950  950 
@@ -48,19 +48,19 @@ F4 "FB_HV_N" I R 5600 5250 50
 F5 "FB_HV_P" I R 5600 5150 50 
 $EndSheet
 $Sheet
-S 4650 3350 950  950 
+S 1050 3800 950  950 
 U 5F41B5C3
 F0 "5V Supply" 50
 F1 "5V_supply.sch" 50
-F2 "+MUX" I L 4650 3550 50 
-F3 "+5V" O R 5600 3550 50 
+F2 "+BATT" I L 1050 4000 50 
+F3 "+5V" O R 2000 4000 50 
 $EndSheet
 $Sheet
 S 6200 3350 950  950 
 U 5F41BCFC
 F0 "5V Backup" 50
 F1 "5V_backup.sch" 50
-F2 "+5V" I L 6200 3550 50 
+F2 "+MUX" I L 6200 3550 50 
 F3 "VSYS" O R 7150 3550 50 
 F4 "SDA" B R 7150 3950 50 
 F5 "SCL" I R 7150 3850 50 
@@ -90,16 +90,7 @@ F8 "SCL" O L 9700 2300 50
 F9 "~INT" I L 9700 4750 50 
 $EndSheet
 Wire Wire Line
-	2800 3550 3100 3550
-Wire Wire Line
-	4050 3550 4350 3550
-Wire Wire Line
-	4650 4850 4350 4850
-Wire Wire Line
-	4350 4850 4350 3550
-Connection ~ 4350 3550
-Wire Wire Line
-	4350 3550 4650 3550
+	4650 4850 4500 4850
 Wire Wire Line
 	8800 3550 9000 3550
 Wire Wire Line
@@ -112,49 +103,6 @@ Wire Wire Line
 	1300 2650 1300 2900
 Text Notes 900  3300 0    50   ~ 0
 Supports 2S - 3S LiPo
-$Comp
-L power:GND #PWR0101
-U 1 1 5F2F2116
-P 1000 4350
-AR Path="/5F2F2116" Ref="#PWR0101"  Part="1" 
-AR Path="/5F38FD4F/5F2F2116" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0101" H 1000 4100 50  0001 C CNN
-F 1 "GND" H 1005 4177 50  0000 C CNN
-F 2 "" H 1000 4350 50  0001 C CNN
-F 3 "" H 1000 4350 50  0001 C CNN
-	1    1000 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 5F2F211C
-P 1900 4350
-AR Path="/5F2F211C" Ref="#PWR0102"  Part="1" 
-AR Path="/5F38FD4F/5F2F211C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0102" H 1900 4100 50  0001 C CNN
-F 1 "GND" H 1905 4177 50  0000 C CNN
-F 2 "" H 1900 4350 50  0001 C CNN
-F 3 "" H 1900 4350 50  0001 C CNN
-	1    1900 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Barrel_Jack_Switch_MountingPin J12
-U 1 1 5F2F2122
-P 1000 4050
-AR Path="/5F2F2122" Ref="J12"  Part="1" 
-AR Path="/5F38FD4F/5F2F2122" Ref="J?"  Part="1" 
-F 0 "J12" H 1057 4367 50  0000 C CNN
-F 1 "PJ-047AH" H 1057 4276 50  0000 C CNN
-F 2 "star-common-lib:CUI_PJ-047AH" H 1050 4010 50  0001 C CNN
-F 3 "~" H 1050 4010 50  0001 C CNN
-F 4 "CP-047AH-ND" H 1000 4050 50  0001 C CNN "Digikey PN"
-	1    1000 4050
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1300 4050
-Wire Wire Line
-	1300 3950 1300 3750
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5F2F212D
@@ -171,20 +119,6 @@ $EndComp
 Connection ~ 1300 2300
 $Comp
 L power:PWR_FLAG #FLG?
-U 1 1 5F2F2134
-P 1300 3750
-AR Path="/5F38FD4F/5F2F2134" Ref="#FLG?"  Part="1" 
-AR Path="/5F2F2134" Ref="#FLG0103"  Part="1" 
-F 0 "#FLG0103" H 1300 3825 50  0001 C CNN
-F 1 "PWR_FLAG" H 1300 3923 50  0000 C CNN
-F 2 "" H 1300 3750 50  0001 C CNN
-F 3 "~" H 1300 3750 50  0001 C CNN
-	1    1300 3750
-	1    0    0    -1  
-$EndComp
-Connection ~ 1300 3750
-$Comp
-L power:PWR_FLAG #FLG?
 U 1 1 5F2F213B
 P 1300 2900
 AR Path="/5F38FD4F/5F2F213B" Ref="#FLG?"  Part="1" 
@@ -196,19 +130,7 @@ F 3 "~" H 1300 2900 50  0001 C CNN
 	1    1300 2900
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1300 3750 1900 3750
 Connection ~ 1300 2900
-Connection ~ 1900 3750
-Wire Wire Line
-	1300 4150 1300 4350
-Wire Wire Line
-	1300 4350 1900 4350
-Wire Wire Line
-	1900 3750 3100 3750
-Wire Wire Line
-	2800 2300 2800 3550
-Connection ~ 2800 2300
 Wire Wire Line
 	2600 2900 2600 2500
 Wire Wire Line
@@ -246,29 +168,15 @@ Wire Wire Line
 Wire Wire Line
 	7200 4050 7200 4750
 $Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5F359A7E
-P 1300 4350
-AR Path="/5F38FD4F/5F359A7E" Ref="#FLG?"  Part="1" 
-AR Path="/5F359A7E" Ref="#FLG0104"  Part="1" 
-F 0 "#FLG0104" H 1300 4425 50  0001 C CNN
-F 1 "PWR_FLAG" H 1300 4523 50  0000 C CNN
-F 2 "" H 1300 4350 50  0001 C CNN
-F 3 "~" H 1300 4350 50  0001 C CNN
-	1    1300 4350
-	-1   0    0    1   
-$EndComp
-Connection ~ 1300 4350
-$Comp
 L Connector:TestPoint_Probe TP102
 U 1 1 5F31D262
-P 4350 3500
-F 0 "TP102" H 4503 3601 50  0000 L CNN
-F 1 "Mux" H 4503 3510 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 4550 3500 50  0001 C CNN
-F 3 "~" H 4550 3500 50  0001 C CNN
-F 4 "36-5006-ND" H 4350 3500 50  0001 C CNN "Digikey PN"
-	1    4350 3500
+P 2600 4000
+F 0 "TP102" H 2753 4101 50  0000 L CNN
+F 1 "+5V" H 2753 4010 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 2800 4000 50  0001 C CNN
+F 3 "~" H 2800 4000 50  0001 C CNN
+F 4 "36-5006-ND" H 2600 4000 50  0001 C CNN "Digikey PN"
+	1    2600 4000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -288,7 +196,7 @@ L Connector:TestPoint_Probe TP104
 U 1 1 5F31E35B
 P 5900 3500
 F 0 "TP104" H 6053 3601 50  0000 L CNN
-F 1 "5V" H 6053 3510 50  0000 L CNN
+F 1 "Mux" H 6053 3510 50  0000 L CNN
 F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 6100 3500 50  0001 C CNN
 F 3 "~" H 6100 3500 50  0001 C CNN
 F 4 "36-5006-ND" H 5900 3500 50  0001 C CNN "Digikey PN"
@@ -331,29 +239,11 @@ F 4 "36-5006-ND" H 9000 3500 50  0001 C CNN "Digikey PN"
 	1    9000 3500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:TestPoint_Probe TP101
-U 1 1 5F320DDB
-P 1900 3700
-F 0 "TP101" H 2053 3801 50  0000 L CNN
-F 1 "Jack" H 2053 3710 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 2100 3700 50  0001 C CNN
-F 3 "~" H 2100 3700 50  0001 C CNN
-F 4 "36-5006-ND" H 1900 3700 50  0001 C CNN "Digikey PN"
-	1    1900 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 3550 5900 3550
 Wire Wire Line
 	5900 3550 5900 3500
 Connection ~ 5900 3550
 Wire Wire Line
 	5900 3550 6200 3550
-Wire Wire Line
-	4350 3550 4350 3500
-Wire Wire Line
-	2800 2300 4400 2300
 Wire Wire Line
 	4400 2300 4400 2250
 Connection ~ 4400 2300
@@ -393,8 +283,6 @@ Connection ~ 7300 5050
 Wire Wire Line
 	7300 5050 9700 5050
 Wire Wire Line
-	1900 3750 1900 3700
-Wire Wire Line
 	7600 3650 7600 2700
 Connection ~ 7600 3650
 Wire Wire Line
@@ -428,8 +316,56 @@ F 3 "" H 950 2900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1300 2900 2600 2900
+$Sheet
+S 1050 5150 950  950 
+U 5FB7ED68
+F0 "USB Connector" 50
+F1 "USB_Conn.sch" 50
+F2 "VUSB" O R 2000 5550 50 
+$EndSheet
 Wire Wire Line
-	1300 2300 2800 2300
-Text Notes 900  4850 0    50   ~ 0
-Supports 9V-12V DC power\n2.1mm ID 5.5mm OD barrel jack
+	1300 2300 2200 2300
+Wire Wire Line
+	4500 4850 4500 3550
+Wire Wire Line
+	4500 3550 5900 3550
+Connection ~ 4500 4850
+Wire Wire Line
+	4500 4850 4350 4850
+Wire Wire Line
+	2000 4000 2600 4000
+Wire Wire Line
+	2600 4000 2600 4850
+Wire Wire Line
+	2600 4850 3400 4850
+Connection ~ 2600 4000
+Wire Wire Line
+	1050 4000 800  4000
+Wire Wire Line
+	800  4000 800  3500
+Wire Wire Line
+	800  3500 2200 3500
+Wire Wire Line
+	2200 3500 2200 2300
+Connection ~ 2200 2300
+Wire Wire Line
+	2200 2300 4400 2300
+Wire Wire Line
+	2600 5550 2600 5050
+Wire Wire Line
+	2600 5050 3400 5050
+Wire Wire Line
+	2000 5550 2600 5550
+$Comp
+L Connector:TestPoint_Probe TP101
+U 1 1 5FC19CF4
+P 2600 5550
+F 0 "TP101" H 2753 5651 50  0000 L CNN
+F 1 "VBUS" H 2753 5560 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 2800 5550 50  0001 C CNN
+F 3 "~" H 2800 5550 50  0001 C CNN
+F 4 "36-5006-ND" H 2600 5550 50  0001 C CNN "Digikey PN"
+	1    2600 5550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

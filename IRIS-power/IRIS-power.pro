@@ -1,6 +1,6 @@
-update=10/6/2020 11:35:02 AM
+update=11/10/2020 8:49:47 PM
 version=1
-last_client=pcbnew
+last_client=kicad
 [general]
 version=1
 RootSch=
@@ -250,6 +250,17 @@ dPairViaGap=0.25
 Name=Low Clearance
 Clearance=0.2
 TrackWidth=0.2
+ViaDiameter=0.5588
+ViaDrill=0.254
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.254
+dPairGap=0.254
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=Ulow Clearance
+Clearance=0.16
+TrackWidth=0.16
 ViaDiameter=0.5588
 ViaDrill=0.254
 uViaDiameter=0.3

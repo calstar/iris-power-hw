@@ -1,0 +1,369 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J?
+U 1 1 5FB88211
+P 3800 3900
+AR Path="/5FB88211" Ref="J?"  Part="1" 
+AR Path="/5FB7ED68/5FB88211" Ref="J81"  Part="1" 
+F 0 "J81" H 3907 4767 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 3907 4676 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_GCT_USB4085" H 3950 3900 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 3950 3900 50  0001 C CNN
+	1    3800 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L star-common-lib:STUSB4500LQTR U?
+U 1 1 5FB88217
+P 6400 3950
+AR Path="/5FB88217" Ref="U?"  Part="1" 
+AR Path="/5FB7ED68/5FB88217" Ref="U82"  Part="1" 
+F 0 "U82" H 6400 4917 50  0000 C CNN
+F 1 "STUSB4500LQTR" H 6400 4826 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm" H 6400 3950 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/stusb4500l.pdf" H 6400 3950 50  0001 C CNN
+	1    6400 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FB8821D
+P 5500 3500
+AR Path="/5FB8821D" Ref="C?"  Part="1" 
+AR Path="/5FB7ED68/5FB8821D" Ref="C82"  Part="1" 
+F 0 "C82" H 5615 3546 50  0000 L CNN
+F 1 "1uF" H 5615 3455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5538 3350 50  0001 C CNN
+F 3 "~" H 5500 3500 50  0001 C CNN
+	1    5500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5FB88223
+P 5100 3500
+AR Path="/5FB88223" Ref="C?"  Part="1" 
+AR Path="/5FB7ED68/5FB88223" Ref="C81"  Part="1" 
+F 0 "C81" H 5215 3546 50  0000 L CNN
+F 1 "1uF" H 5215 3455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5138 3350 50  0001 C CNN
+F 3 "~" H 5100 3500 50  0001 C CNN
+	1    5100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FB88229
+P 5300 3650
+AR Path="/5FB88229" Ref="#PWR?"  Part="1" 
+AR Path="/5FB7ED68/5FB88229" Ref="#PWR083"  Part="1" 
+F 0 "#PWR083" H 5300 3400 50  0001 C CNN
+F 1 "GND" H 5305 3477 50  0000 C CNN
+F 2 "" H 5300 3650 50  0001 C CNN
+F 3 "" H 5300 3650 50  0001 C CNN
+	1    5300 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3650 5300 3650
+Connection ~ 5300 3650
+Wire Wire Line
+	5300 3650 5500 3650
+Connection ~ 5500 3650
+Wire Wire Line
+	5500 3650 5800 3650
+Wire Wire Line
+	5800 3650 5800 3550
+Connection ~ 5800 3650
+Wire Wire Line
+	5500 3350 5800 3350
+Wire Wire Line
+	5800 3250 5100 3250
+Wire Wire Line
+	5100 3250 5100 3350
+Wire Wire Line
+	5800 3850 5800 3950
+Connection ~ 5800 3950
+Wire Wire Line
+	5800 4150 5800 4050
+Connection ~ 5800 4050
+Text Label 5100 3950 0    50   ~ 0
+CC1
+Text Label 5100 4050 0    50   ~ 0
+CC2
+$Comp
+L power:GND #PWR?
+U 1 1 5FB8823F
+P 5700 4550
+AR Path="/5FB8823F" Ref="#PWR?"  Part="1" 
+AR Path="/5FB7ED68/5FB8823F" Ref="#PWR084"  Part="1" 
+F 0 "#PWR084" H 5700 4300 50  0001 C CNN
+F 1 "GND" H 5705 4377 50  0000 C CNN
+F 2 "" H 5700 4550 50  0001 C CNN
+F 3 "" H 5700 4550 50  0001 C CNN
+	1    5700 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4350 5800 4450
+Connection ~ 5800 4450
+Wire Wire Line
+	5800 4450 5800 4550
+Wire Wire Line
+	5800 4550 5700 4550
+Connection ~ 5800 4550
+$Comp
+L power:GND #PWR?
+U 1 1 5FB8824A
+P 6400 4850
+AR Path="/5FB8824A" Ref="#PWR?"  Part="1" 
+AR Path="/5FB7ED68/5FB8824A" Ref="#PWR085"  Part="1" 
+F 0 "#PWR085" H 6400 4600 50  0001 C CNN
+F 1 "GND" H 6405 4677 50  0000 C CNN
+F 2 "" H 6400 4850 50  0001 C CNN
+F 3 "" H 6400 4850 50  0001 C CNN
+	1    6400 4850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7000 4550
+$Comp
+L power:GND #PWR?
+U 1 1 5FB88251
+P 7100 4550
+AR Path="/5FB88251" Ref="#PWR?"  Part="1" 
+AR Path="/5FB7ED68/5FB88251" Ref="#PWR086"  Part="1" 
+F 0 "#PWR086" H 7100 4300 50  0001 C CNN
+F 1 "GND" H 7105 4377 50  0000 C CNN
+F 2 "" H 7100 4550 50  0001 C CNN
+F 3 "" H 7100 4550 50  0001 C CNN
+	1    7100 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4550 7100 4450
+Wire Wire Line
+	7100 4450 7000 4450
+Wire Wire Line
+	7100 4450 7100 4350
+Wire Wire Line
+	7100 4350 7000 4350
+Connection ~ 7100 4450
+NoConn ~ 7000 4250
+NoConn ~ 7000 4150
+NoConn ~ 7000 4050
+NoConn ~ 7000 3950
+NoConn ~ 7000 3850
+Wire Wire Line
+	7000 2850 7000 3250
+NoConn ~ 4400 4400
+NoConn ~ 4400 4500
+$Comp
+L power:GND #PWR?
+U 1 1 5FB88264
+P 3800 4800
+AR Path="/5FB88264" Ref="#PWR?"  Part="1" 
+AR Path="/5FB7ED68/5FB88264" Ref="#PWR081"  Part="1" 
+F 0 "#PWR081" H 3800 4550 50  0001 C CNN
+F 1 "GND" H 3805 4627 50  0000 C CNN
+F 2 "" H 3800 4800 50  0001 C CNN
+F 3 "" H 3800 4800 50  0001 C CNN
+	1    3800 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4800 3500 4800
+Connection ~ 3800 4800
+Wire Wire Line
+	4500 4050 4500 3600
+Wire Wire Line
+	4500 3600 4400 3600
+Wire Wire Line
+	4500 4050 5800 4050
+NoConn ~ 4400 3800
+NoConn ~ 4400 3900
+NoConn ~ 4400 4000
+NoConn ~ 4400 4100
+Wire Wire Line
+	4600 3950 4600 3500
+Wire Wire Line
+	4600 3500 4400 3500
+Wire Wire Line
+	4600 3950 5800 3950
+Wire Wire Line
+	4400 3300 4600 3300
+Wire Wire Line
+	4600 3300 4600 2850
+Wire Wire Line
+	4600 2850 7000 2850
+$Comp
+L Device:C C?
+U 1 1 5FB88279
+P 7200 3000
+AR Path="/5FB88279" Ref="C?"  Part="1" 
+AR Path="/5FB7ED68/5FB88279" Ref="C83"  Part="1" 
+F 0 "C83" H 7315 3046 50  0000 L CNN
+F 1 "1uF" H 7315 2955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7238 2850 50  0001 C CNN
+F 3 "~" H 7200 3000 50  0001 C CNN
+	1    7200 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FB8827F
+P 7200 3150
+AR Path="/5FB8827F" Ref="#PWR?"  Part="1" 
+AR Path="/5FB7ED68/5FB8827F" Ref="#PWR087"  Part="1" 
+F 0 "#PWR087" H 7200 2900 50  0001 C CNN
+F 1 "GND" H 7205 2977 50  0000 C CNN
+F 2 "" H 7200 3150 50  0001 C CNN
+F 3 "" H 7200 3150 50  0001 C CNN
+	1    7200 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2850 7000 2850
+Connection ~ 7000 2850
+$Comp
+L Device:R R?
+U 1 1 5FB88287
+P 7550 3000
+AR Path="/5FB88287" Ref="R?"  Part="1" 
+AR Path="/5FB7ED68/5FB88287" Ref="R81"  Part="1" 
+F 0 "R81" H 7620 3046 50  0000 L CNN
+F 1 "1k" H 7620 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7480 3000 50  0001 C CNN
+F 3 "~" H 7550 3000 50  0001 C CNN
+	1    7550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FB8828D
+P 7800 3000
+AR Path="/5FB8828D" Ref="R?"  Part="1" 
+AR Path="/5FB7ED68/5FB8828D" Ref="R82"  Part="1" 
+F 0 "R82" H 7870 3046 50  0000 L CNN
+F 1 "100k" H 7870 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7730 3000 50  0001 C CNN
+F 3 "~" H 7800 3000 50  0001 C CNN
+	1    7800 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2850 7550 2850
+Connection ~ 7200 2850
+Connection ~ 7550 2850
+Wire Wire Line
+	7550 2850 7200 2850
+Wire Wire Line
+	7000 3450 7550 3450
+Wire Wire Line
+	7550 3450 7550 3150
+$Comp
+L Device:R R?
+U 1 1 5FB88299
+P 8250 3300
+AR Path="/5FB88299" Ref="R?"  Part="1" 
+AR Path="/5FB7ED68/5FB88299" Ref="R83"  Part="1" 
+F 0 "R83" H 8320 3346 50  0000 L CNN
+F 1 "20k" H 8320 3255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8180 3300 50  0001 C CNN
+F 3 "~" H 8250 3300 50  0001 C CNN
+	1    8250 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 3150 8250 3150
+Wire Wire Line
+	8050 2850 7800 2850
+Connection ~ 7800 2850
+Wire Wire Line
+	8250 3450 8250 3550
+Wire Wire Line
+	7000 3550 8250 3550
+$Comp
+L Device:R R?
+U 1 1 5FB882AB
+P 8550 3000
+AR Path="/5FB882AB" Ref="R?"  Part="1" 
+AR Path="/5FB7ED68/5FB882AB" Ref="R84"  Part="1" 
+F 0 "R84" H 8620 3046 50  0000 L CNN
+F 1 "1k" H 8620 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8480 3000 50  0001 C CNN
+F 3 "~" H 8550 3000 50  0001 C CNN
+	1    8550 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 2850 8450 2850
+Wire Wire Line
+	8550 3150 8550 3650
+Wire Wire Line
+	8550 3650 7000 3650
+Text Label 6300 2850 0    50   ~ 0
+VBUS
+$Comp
+L power:GND #PWR?
+U 1 1 5FB882BE
+P 4900 4800
+AR Path="/5FB882BE" Ref="#PWR?"  Part="1" 
+AR Path="/5FB7ED68/5FB882BE" Ref="#PWR082"  Part="1" 
+F 0 "#PWR082" H 4900 4550 50  0001 C CNN
+F 1 "GND" H 4905 4627 50  0000 C CNN
+F 2 "" H 4900 4800 50  0001 C CNN
+F 3 "" H 4900 4800 50  0001 C CNN
+	1    4900 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4400 4600 3950
+Connection ~ 4600 3950
+Wire Wire Line
+	4500 4050 4500 4600
+Wire Wire Line
+	4500 4600 4600 4600
+Connection ~ 4500 4050
+$Comp
+L star-common-lib:TPD2E2U06 U81
+U 1 1 5FB8F558
+P 4900 4500
+F 0 "U81" H 5130 4489 50  0000 L CNN
+F 1 "TPD2E2U06" H 5130 4398 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4100 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf" H 4700 4700 50  0001 C CNN
+	1    4900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L star-common-lib:STS9P3LLH6 Q81
+U 1 1 5FB9DB9B
+P 8250 2950
+F 0 "Q81" V 8592 2950 50  0000 C CNN
+F 1 "STS9P3LLH6" V 8501 2950 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 8450 3050 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/sts9p3llh6.pdf" H 8250 2950 50  0001 C CNN
+	1    8250 2950
+	0    1    -1   0   
+$EndComp
+Connection ~ 8250 3150
+Text HLabel 8650 2850 2    50   Output ~ 0
+VUSB
+Wire Wire Line
+	8650 2850 8550 2850
+Connection ~ 8550 2850
+$EndSCHEMATC

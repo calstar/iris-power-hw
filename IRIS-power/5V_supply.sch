@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 8
+Sheet 5 9
 Title ""
 Date ""
 Rev ""
@@ -152,21 +152,16 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5F427BD6
-P 7550 4050
+P 7250 4050
 AR Path="/5F427BD6" Ref="#PWR?"  Part="1" 
 AR Path="/5F41B5C3/5F427BD6" Ref="#PWR053"  Part="1" 
-F 0 "#PWR053" H 7550 3800 50  0001 C CNN
-F 1 "GND" H 7555 3877 50  0000 C CNN
-F 2 "" H 7550 4050 50  0001 C CNN
-F 3 "" H 7550 4050 50  0001 C CNN
-	1    7550 4050
+F 0 "#PWR053" H 7250 3800 50  0001 C CNN
+F 1 "GND" H 7255 3877 50  0000 C CNN
+F 2 "" H 7250 4050 50  0001 C CNN
+F 3 "" H 7250 4050 50  0001 C CNN
+	1    7250 4050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7350 4050 7550 4050
-Connection ~ 7550 4050
-Wire Wire Line
-	7550 4050 7750 4050
 Wire Wire Line
 	6550 4400 6550 4350
 Connection ~ 6550 3750
@@ -176,84 +171,51 @@ Wire Wire Line
 Text Notes 6600 4100 0    50   ~ 0
 Note 1
 Text HLabel 4400 3750 1    50   Input ~ 0
-+MUX
++BATT
 Text HLabel 8250 3750 2    50   Output ~ 0
 +5V
 Text Label 6350 4050 0    50   ~ 0
 FB
 Text Label 6150 4400 0    50   ~ 0
 AGND
-$Comp
-L Device:C C53
-U 1 1 5F353A91
-P 6950 3900
-F 0 "C53" H 7065 3946 50  0000 L CNN
-F 1 "10uF" H 7065 3855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6988 3750 50  0001 C CNN
-F 3 "~" H 6950 3900 50  0001 C CNN
-F 4 "1276-1192-1-ND" H 6950 3900 50  0001 C CNN "Digikey PN"
-	1    6950 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C54
-U 1 1 5F353D55
-P 7350 3900
-F 0 "C54" H 7465 3946 50  0000 L CNN
-F 1 "10uF" H 7465 3855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7388 3750 50  0001 C CNN
-F 3 "~" H 7350 3900 50  0001 C CNN
-F 4 "1276-1192-1-ND" H 7350 3900 50  0001 C CNN "Digikey PN"
-	1    7350 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C55
-U 1 1 5F3540F0
-P 7750 3900
-F 0 "C55" H 7865 3946 50  0000 L CNN
-F 1 "10uF" H 7865 3855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7788 3750 50  0001 C CNN
-F 3 "~" H 7750 3900 50  0001 C CNN
-F 4 "1276-1192-1-ND" H 7750 3900 50  0001 C CNN "Digikey PN"
-	1    7750 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C56
-U 1 1 5F354331
-P 8150 3900
-F 0 "C56" H 8265 3946 50  0000 L CNN
-F 1 "10uF" H 8265 3855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8188 3750 50  0001 C CNN
-F 3 "~" H 8150 3900 50  0001 C CNN
-F 4 "1276-1192-1-ND" H 8150 3900 50  0001 C CNN "Digikey PN"
-	1    8150 3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6550 3750 6950 3750
-Wire Wire Line
-	7350 4050 6950 4050
-Connection ~ 7350 4050
-Wire Wire Line
-	7750 4050 8150 4050
-Connection ~ 7750 4050
-Connection ~ 6950 3750
-Wire Wire Line
-	6950 3750 7350 3750
-Connection ~ 7350 3750
-Wire Wire Line
-	7350 3750 7750 3750
-Connection ~ 7750 3750
-Wire Wire Line
-	7750 3750 8150 3750
-Connection ~ 8150 3750
-Wire Wire Line
-	8150 3750 8250 3750
 Wire Wire Line
 	6000 4400 6550 4400
 Wire Wire Line
 	5500 4400 5800 4400
 Connection ~ 5800 4400
+Wire Wire Line
+	6950 4050 7250 4050
+Wire Wire Line
+	6550 3750 6950 3750
+$Comp
+L Device:C C53
+U 1 1 5FBDF297
+P 6950 3900
+F 0 "C53" H 7065 3946 50  0000 L CNN
+F 1 "47uF" H 7065 3855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 6988 3750 50  0001 C CNN
+F 3 "~" H 6950 3900 50  0001 C CNN
+	1    6950 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 6950 3750
+Wire Wire Line
+	6950 3750 7550 3750
+$Comp
+L Device:C C54
+U 1 1 5FBDF68D
+P 7550 3900
+F 0 "C54" H 7665 3946 50  0000 L CNN
+F 1 "47uF" H 7665 3855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 7588 3750 50  0001 C CNN
+F 3 "~" H 7550 3900 50  0001 C CNN
+	1    7550 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 7550 3750
+Wire Wire Line
+	7550 3750 8250 3750
+Connection ~ 7250 4050
+Wire Wire Line
+	7250 4050 7550 4050
 $EndSCHEMATC
