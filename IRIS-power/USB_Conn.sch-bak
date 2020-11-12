@@ -14,19 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:USB_C_Receptacle_USB2.0 J?
-U 1 1 5FB88211
-P 3800 3900
-AR Path="/5FB88211" Ref="J?"  Part="1" 
-AR Path="/5FB7ED68/5FB88211" Ref="J81"  Part="1" 
-F 0 "J81" H 3907 4767 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 3907 4676 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_GCT_USB4085" H 3950 3900 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 3950 3900 50  0001 C CNN
-	1    3800 3900
-	1    0    0    -1  
-$EndComp
-$Comp
 L star-common-lib:STUSB4500LQTR U?
 U 1 1 5FB88217
 P 6400 3950
@@ -108,14 +95,14 @@ CC2
 $Comp
 L power:GND #PWR?
 U 1 1 5FB8823F
-P 5700 4550
+P 5800 4650
 AR Path="/5FB8823F" Ref="#PWR?"  Part="1" 
 AR Path="/5FB7ED68/5FB8823F" Ref="#PWR084"  Part="1" 
-F 0 "#PWR084" H 5700 4300 50  0001 C CNN
-F 1 "GND" H 5705 4377 50  0000 C CNN
-F 2 "" H 5700 4550 50  0001 C CNN
-F 3 "" H 5700 4550 50  0001 C CNN
-	1    5700 4550
+F 0 "#PWR084" H 5800 4400 50  0001 C CNN
+F 1 "GND" H 5805 4477 50  0000 C CNN
+F 2 "" H 5800 4650 50  0001 C CNN
+F 3 "" H 5800 4650 50  0001 C CNN
+	1    5800 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -123,8 +110,6 @@ Wire Wire Line
 Connection ~ 5800 4450
 Wire Wire Line
 	5800 4450 5800 4550
-Wire Wire Line
-	5800 4550 5700 4550
 Connection ~ 5800 4550
 $Comp
 L power:GND #PWR?
@@ -186,7 +171,6 @@ F 3 "" H 3800 4800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3800 4800 3500 4800
-Connection ~ 3800 4800
 Wire Wire Line
 	4500 4050 4500 3600
 Wire Wire Line
@@ -254,18 +238,16 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5FB8828D
-P 7800 3000
+P 7850 3000
 AR Path="/5FB8828D" Ref="R?"  Part="1" 
 AR Path="/5FB7ED68/5FB8828D" Ref="R82"  Part="1" 
-F 0 "R82" H 7870 3046 50  0000 L CNN
-F 1 "100k" H 7870 2955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7730 3000 50  0001 C CNN
-F 3 "~" H 7800 3000 50  0001 C CNN
-	1    7800 3000
+F 0 "R82" H 7920 3046 50  0000 L CNN
+F 1 "100k" H 7920 2955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7780 3000 50  0001 C CNN
+F 3 "~" H 7850 3000 50  0001 C CNN
+	1    7850 3000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7800 2850 7550 2850
 Connection ~ 7200 2850
 Connection ~ 7550 2850
 Wire Wire Line
@@ -281,17 +263,12 @@ P 8250 3300
 AR Path="/5FB88299" Ref="R?"  Part="1" 
 AR Path="/5FB7ED68/5FB88299" Ref="R83"  Part="1" 
 F 0 "R83" H 8320 3346 50  0000 L CNN
-F 1 "20k" H 8320 3255 50  0000 L CNN
+F 1 "1k" H 8320 3255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8180 3300 50  0001 C CNN
 F 3 "~" H 8250 3300 50  0001 C CNN
 	1    8250 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7800 3150 8250 3150
-Wire Wire Line
-	8050 2850 7800 2850
-Connection ~ 7800 2850
 Wire Wire Line
 	8250 3450 8250 3550
 Wire Wire Line
@@ -349,21 +326,54 @@ F 3 "http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf" H 4700 4700 50  0001 C CNN
 	1    4900 4500
 	1    0    0    -1  
 $EndComp
-$Comp
-L star-common-lib:STS9P3LLH6 Q81
-U 1 1 5FB9DB9B
-P 8250 2950
-F 0 "Q81" V 8592 2950 50  0000 C CNN
-F 1 "STS9P3LLH6" V 8501 2950 50  0000 C CNN
-F 2 "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" H 8450 3050 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/sts9p3llh6.pdf" H 8250 2950 50  0001 C CNN
-	1    8250 2950
-	0    1    -1   0   
-$EndComp
-Connection ~ 8250 3150
 Text HLabel 8650 2850 2    50   Output ~ 0
 VUSB
 Wire Wire Line
 	8650 2850 8550 2850
 Connection ~ 8550 2850
+Wire Wire Line
+	7550 2850 7850 2850
+Wire Wire Line
+	7850 3150 8250 3150
+Connection ~ 8250 3150
+Connection ~ 7850 2850
+$Comp
+L Device:Q_PMOS_GSD Q81
+U 1 1 5FACAFB1
+P 8250 2950
+F 0 "Q81" V 8592 2950 50  0000 C CNN
+F 1 "SSM3J328R" V 8501 2950 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8450 3050 50  0001 C CNN
+F 3 "~" H 8250 2950 50  0001 C CNN
+	1    8250 2950
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8050 2850 7850 2850
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J81
+U 1 1 5FACDB97
+P 3800 3900
+F 0 "J81" H 3907 4767 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 3907 4676 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_GCT_USB4085" H 3950 3900 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 3950 3900 50  0001 C CNN
+	1    3800 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 3800 4800
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5FB06030
+P 4600 2850
+F 0 "#FLG0103" H 4600 2925 50  0001 C CNN
+F 1 "PWR_FLAG" H 4600 3023 50  0000 C CNN
+F 2 "" H 4600 2850 50  0001 C CNN
+F 3 "~" H 4600 2850 50  0001 C CNN
+	1    4600 2850
+	1    0    0    -1  
+$EndComp
+Connection ~ 4600 2850
+Wire Wire Line
+	5800 4650 5800 4550
 $EndSCHEMATC
