@@ -21,8 +21,9 @@ AR Path="/5FB88217" Ref="U?"  Part="1"
 AR Path="/5FB7ED68/5FB88217" Ref="U82"  Part="1" 
 F 0 "U82" H 6400 4917 50  0000 C CNN
 F 1 "STUSB4500LQTR" H 6400 4826 50  0000 C CNN
-F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.7x2.7mm" H 6400 3950 50  0001 C CNN
+F 2 "star-common-lib:STUSB4500L" H 6400 3950 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/stusb4500l.pdf" H 6400 3950 50  0001 C CNN
+F 4 "497-STUSB4500LQCT-ND" H 6400 3950 50  0001 C CNN "Digikey PN"
 	1    6400 3950
 	1    0    0    -1  
 $EndComp
@@ -36,6 +37,7 @@ F 0 "C82" H 5615 3546 50  0000 L CNN
 F 1 "1uF" H 5615 3455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5538 3350 50  0001 C CNN
 F 3 "~" H 5500 3500 50  0001 C CNN
+F 4 "1276-1860-1-ND" H 5500 3500 50  0001 C CNN "Digikey PN"
 	1    5500 3500
 	1    0    0    -1  
 $EndComp
@@ -49,6 +51,7 @@ F 0 "C81" H 5215 3546 50  0000 L CNN
 F 1 "1uF" H 5215 3455 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5138 3350 50  0001 C CNN
 F 3 "~" H 5100 3500 50  0001 C CNN
+F 4 "1276-1860-1-ND" H 5100 3500 50  0001 C CNN "Digikey PN"
 	1    5100 3500
 	1    0    0    -1  
 $EndComp
@@ -170,8 +173,6 @@ F 3 "" H 3800 4800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 4800 3500 4800
-Wire Wire Line
 	4500 4050 4500 3600
 Wire Wire Line
 	4500 3600 4400 3600
@@ -203,6 +204,7 @@ F 0 "C83" H 7315 3046 50  0000 L CNN
 F 1 "1uF" H 7315 2955 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7238 2850 50  0001 C CNN
 F 3 "~" H 7200 3000 50  0001 C CNN
+F 4 "1276-1860-1-ND" H 7200 3000 50  0001 C CNN "Digikey PN"
 	1    7200 3000
 	1    0    0    -1  
 $EndComp
@@ -232,6 +234,7 @@ F 0 "R81" H 7620 3046 50  0000 L CNN
 F 1 "1k" H 7620 2955 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7480 3000 50  0001 C CNN
 F 3 "~" H 7550 3000 50  0001 C CNN
+F 4 "RMCF0603FT1K00CT-ND" H 7550 3000 50  0001 C CNN "Digikey PN"
 	1    7550 3000
 	1    0    0    -1  
 $EndComp
@@ -245,6 +248,7 @@ F 0 "R82" H 7920 3046 50  0000 L CNN
 F 1 "100k" H 7920 2955 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7780 3000 50  0001 C CNN
 F 3 "~" H 7850 3000 50  0001 C CNN
+F 4 "RR08P100KDCT-ND" H 7850 3000 50  0001 C CNN "Digikey PN"
 	1    7850 3000
 	1    0    0    -1  
 $EndComp
@@ -266,6 +270,7 @@ F 0 "R83" H 8320 3346 50  0000 L CNN
 F 1 "1k" H 8320 3255 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8180 3300 50  0001 C CNN
 F 3 "~" H 8250 3300 50  0001 C CNN
+F 4 "RMCF0603FT1K00CT-ND" H 8250 3300 50  0001 C CNN "Digikey PN"
 	1    8250 3300
 	1    0    0    -1  
 $EndComp
@@ -283,6 +288,7 @@ F 0 "R84" H 8620 3046 50  0000 L CNN
 F 1 "1k" H 8620 2955 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 8480 3000 50  0001 C CNN
 F 3 "~" H 8550 3000 50  0001 C CNN
+F 4 "RMCF0603FT1K00CT-ND" H 8550 3000 50  0001 C CNN "Digikey PN"
 	1    8550 3000
 	1    0    0    -1  
 $EndComp
@@ -323,14 +329,12 @@ F 0 "U81" H 5130 4489 50  0000 L CNN
 F 1 "TPD2E2U06" H 5130 4398 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 4100 4250 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tpd2e2u06.pdf" H 4700 4700 50  0001 C CNN
+F 4 "296-40695-1-ND" H 4900 4500 50  0001 C CNN "Digikey PN"
 	1    4900 4500
 	1    0    0    -1  
 $EndComp
-Text HLabel 8650 2850 2    50   Output ~ 0
+Text HLabel 9550 2850 2    50   Output ~ 0
 VUSB
-Wire Wire Line
-	8650 2850 8550 2850
-Connection ~ 8550 2850
 Wire Wire Line
 	7550 2850 7850 2850
 Wire Wire Line
@@ -345,6 +349,7 @@ F 0 "Q81" V 8592 2950 50  0000 C CNN
 F 1 "SSM3J328R" V 8501 2950 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 8450 3050 50  0001 C CNN
 F 3 "~" H 8250 2950 50  0001 C CNN
+F 4 "SSM3J328RLFCT-ND" H 8250 2950 50  0001 C CNN "Digikey PN"
 	1    8250 2950
 	0    1    -1   0   
 $EndComp
@@ -356,12 +361,12 @@ U 1 1 5FACDB97
 P 3800 3900
 F 0 "J81" H 3907 4767 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 3907 4676 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_GCT_USB4085" H 3950 3900 50  0001 C CNN
+F 2 "star-common-lib:USB_C_Receptacle_GCT_USB4085_Fixed" H 3950 3900 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 3950 3900 50  0001 C CNN
+F 4 "2073-USB4085-GF-ACT-ND" H 3800 3900 50  0001 C CNN "Digikey PN"
 	1    3800 3900
 	1    0    0    -1  
 $EndComp
-Connection ~ 3800 4800
 $Comp
 L power:PWR_FLAG #FLG0103
 U 1 1 5FB06030
@@ -376,4 +381,39 @@ $EndComp
 Connection ~ 4600 2850
 Wire Wire Line
 	5800 4650 5800 4550
+NoConn ~ 3500 4800
+$Comp
+L Device:Ferrite_Bead FB81
+U 1 1 5FD50777
+P 9200 2850
+F 0 "FB81" V 8926 2850 50  0000 C CNN
+F 1 "Ferrite_Bead" V 9017 2850 50  0000 C CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" V 9130 2850 50  0001 C CNN
+F 3 "~" H 9200 2850 50  0001 C CNN
+	1    9200 2850
+	0    1    1    0   
+$EndComp
+Connection ~ 8550 2850
+Wire Wire Line
+	9350 2850 9550 2850
+$Comp
+L Connector:TestPoint_Probe TP?
+U 1 1 5FD685E7
+P 8600 2700
+AR Path="/5FD685E7" Ref="TP?"  Part="1" 
+AR Path="/5FB7ED68/5FD685E7" Ref="TP101"  Part="1" 
+F 0 "TP101" H 8753 2801 50  0000 L CNN
+F 1 "VBUS" H 8753 2710 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 8800 2700 50  0001 C CNN
+F 3 "~" H 8800 2700 50  0001 C CNN
+F 4 "36-5006-ND" H 8600 2700 50  0001 C CNN "Digikey PN"
+	1    8600 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 2850 8550 2700
+Wire Wire Line
+	8550 2700 8600 2700
+Wire Wire Line
+	8550 2850 9050 2850
 $EndSCHEMATC

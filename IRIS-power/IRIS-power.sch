@@ -356,16 +356,4 @@ Wire Wire Line
 	2600 5050 3400 5050
 Wire Wire Line
 	2000 5550 2600 5550
-$Comp
-L Connector:TestPoint_Probe TP101
-U 1 1 5FC19CF4
-P 2600 5550
-F 0 "TP101" H 2753 5651 50  0000 L CNN
-F 1 "VBUS" H 2753 5560 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 2800 5550 50  0001 C CNN
-F 3 "~" H 2800 5550 50  0001 C CNN
-F 4 "36-5006-ND" H 2600 5550 50  0001 C CNN "Digikey PN"
-	1    2600 5550
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=11/11/2020 9:53:26 PM
+update=12/11/2020 3:05:35 PM
 version=1
 last_client=kicad
 [general]
@@ -64,8 +64,8 @@ OthersTextSizeH=1
 OthersTextSizeThickness=0.15
 OthersTextItalic=0
 OthersTextUpright=1
-SolderMaskClearance=0.051
-SolderMaskMinWidth=0.25
+SolderMaskClearance=0.0508
+SolderMaskMinWidth=0
 SolderPasteClearance=0
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
@@ -248,7 +248,7 @@ dPairGap=0.254
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=Low Clearance
-Clearance=0.2
+Clearance=0.16
 TrackWidth=0.2
 ViaDiameter=0.5588
 ViaDrill=0.254

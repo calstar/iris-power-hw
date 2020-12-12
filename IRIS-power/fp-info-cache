@@ -1,4 +1,4 @@
-19132855792177871
+19139320028646085
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83300,6 +83300,13 @@ IRIS
 56
 21
 star-common-lib
+IRIS_V4_power
+Board outline and stack connector footprint for IRIS/Muons V4
+IRIS
+0
+56
+21
+star-common-lib
 LED_RGB_EAST1616RGBB2
 
 
@@ -83308,7 +83315,7 @@ LED_RGB_EAST1616RGBB2
 4
 star-common-lib
 LTC3110
-
+Small Outline Pkg (SOP with Tab), 0.65 mm pitch; 24 pin, 7.80 mm L X 4.40 mm W X 1.20 mm H body
 
 0
 25
@@ -83322,7 +83329,7 @@ MAX17048G&plus_
 9
 star-common-lib
 MAX17261
-
+Small Outline No-Lead (SON with Tab), 0.40 mm pitch; 14 pin, 3.00 mm L X 3.00 mm W X 0.80 mm H body
 
 0
 15
@@ -83362,6 +83369,13 @@ SCCR20B335PRB
 0
 2
 2
+star-common-lib
+STUSB4500L
+Quad Flat No-Lead (QFN with Tab), 0.50 mm pitch; square, 6 pin X 6 pin, 4.00 mm L X 4.00 mm W X 1.00 mm H body
+
+0
+25
+25
 star-common-lib
 ST_Motion_Breakout
 
@@ -83405,6 +83419,13 @@ TSM-103-01-L-SV
 3
 3
 star-common-lib
+TSSOP-24
+Small Outline Pkg (SOP with Tab), 0.65 mm pitch; 24 pin, 7.80 mm L X 4.40 mm W X 1.20 mm H body
+
+0
+25
+25
+star-common-lib
 Teensy41
 
 
@@ -83432,6 +83453,13 @@ GPS, CAM-M8
 0
 31
 31
+star-common-lib
+USB_C_Receptacle_GCT_USB4085_Fixed
+USB 2.0 Type C Receptacle, https://gct.co/Files/Drawings/USB4085.pdf
+USB Type-C Receptacle Through-hole Right angle
+0
+20
+17
 star-common-lib
 VLS6045AF
 

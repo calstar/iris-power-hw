@@ -64,7 +64,7 @@ U 1 1 5F8510FD
 P 5400 3800
 F 0 "J13" H 5322 4917 50  0000 C CNN
 F 1 "Conn_01x20_MountingPin" H 5322 4826 50  0000 C CNN
-F 2 "star-common-lib:IRIS_Muons_physical" H 5400 3800 50  0001 C CNN
+F 2 "star-common-lib:IRIS_V4_power" H 5400 3800 50  0001 C CNN
 F 3 "~" H 5400 3800 50  0001 C CNN
 	1    5400 3800
 	-1   0    0    -1  
