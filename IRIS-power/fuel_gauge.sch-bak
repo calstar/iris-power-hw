@@ -61,7 +61,6 @@ F 3 "" H 6600 4950 50  0001 C CNN
 	1    6600 4950
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5800 4400
 $Comp
 L Device:R R?
 U 1 1 5F3ED56F
@@ -279,4 +278,11 @@ Wire Wire Line
 	5800 4950 6100 4950
 Text Notes 5550 5300 0    50   ~ 0
 Layout Guidelines (from datasheet pg 28)\n
+Wire Wire Line
+	5800 3600 5700 3600
+Wire Wire Line
+	5700 3600 5700 4400
+Wire Wire Line
+	5700 4400 5800 4400
+Connection ~ 5800 3600
 $EndSCHEMATC

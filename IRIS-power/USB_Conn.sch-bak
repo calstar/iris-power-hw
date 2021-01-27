@@ -361,7 +361,7 @@ U 1 1 5FACDB97
 P 3800 3900
 F 0 "J81" H 3907 4767 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 3907 4676 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_GCT_USB4085" H 3950 3900 50  0001 C CNN
+F 2 "star-common-lib:USB_C_Receptacle_GCT_USB4085_Fixed" H 3950 3900 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 3950 3900 50  0001 C CNN
 F 4 "2073-USB4085-GF-ACT-ND" H 3800 3900 50  0001 C CNN "Digikey PN"
 	1    3800 3900
@@ -390,6 +390,7 @@ F 0 "FB81" V 8926 2850 50  0000 C CNN
 F 1 "Ferrite_Bead" V 9017 2850 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 9130 2850 50  0001 C CNN
 F 3 "~" H 9200 2850 50  0001 C CNN
+F 4 "BLM18SG700TN1D" H 9200 2850 50  0001 C CNN "Digikey PN"
 	1    9200 2850
 	0    1    1    0   
 $EndComp

@@ -153,8 +153,6 @@ Connection ~ 7100 4450
 NoConn ~ 7000 4250
 NoConn ~ 7000 4150
 NoConn ~ 7000 4050
-NoConn ~ 7000 3950
-NoConn ~ 7000 3850
 Wire Wire Line
 	7000 2850 7000 3250
 NoConn ~ 4400 4400
@@ -390,6 +388,7 @@ F 0 "FB81" V 8926 2850 50  0000 C CNN
 F 1 "Ferrite_Bead" V 9017 2850 50  0000 C CNN
 F 2 "Inductor_SMD:L_0603_1608Metric" V 9130 2850 50  0001 C CNN
 F 3 "~" H 9200 2850 50  0001 C CNN
+F 4 "BLM18SG700TN1D" H 9200 2850 50  0001 C CNN "Digikey PN"
 	1    9200 2850
 	0    1    1    0   
 $EndComp
@@ -416,4 +415,38 @@ Wire Wire Line
 	8550 2700 8600 2700
 Wire Wire Line
 	8550 2850 9050 2850
+$Comp
+L Connector:TestPoint_Probe TP81
+U 1 1 5FEEAC57
+P 7550 4000
+F 0 "TP81" H 7703 4101 50  0000 L CNN
+F 1 "TestPoint_Probe" H 7703 4010 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 7750 4000 50  0001 C CNN
+F 3 "~" H 7750 4000 50  0001 C CNN
+	1    7550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP82
+U 1 1 5FEEB0ED
+P 7550 4400
+F 0 "TP82" H 7703 4501 50  0000 L CNN
+F 1 "TestPoint_Probe" H 7703 4410 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 7750 4400 50  0001 C CNN
+F 3 "~" H 7750 4400 50  0001 C CNN
+	1    7550 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3850 7450 3850
+Wire Wire Line
+	7450 3850 7450 4000
+Wire Wire Line
+	7450 4000 7550 4000
+Wire Wire Line
+	7000 3950 7350 3950
+Wire Wire Line
+	7350 3950 7350 4400
+Wire Wire Line
+	7350 4400 7550 4400
 $EndSCHEMATC
